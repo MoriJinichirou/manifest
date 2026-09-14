@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生徒会長立候補 特設サイト</title>
+    <style>
+        :root {
+            /* イメージカラーを緑色ベースに変更 */
+            --primary-color: #2e7d32; /* 信頼感のある深い緑 */
+            --secondary-color: #f1f8e9; /* 背景用の薄い緑 */
+            --text-color: #333333;
+            --accent-color: #ff8f00; /* 緑と相性の良いオレンジをアクセントに */
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        header .subtitle {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            font-weight: bold;
+            color: #c8e6c9; /* 薄い緑で副題を強調 */
+        }
+
+        header .candidate-name {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--accent-color);
+            margin: 0.5rem auto 0;
+        }
+
+        /* アピールセクション（前副会長の経験） */
+        .experience-section {
+            background: white;
+            border-left: 6px solid var(--primary-color);
+            padding: 2rem;
+            border-radius: 4px 10px 10px 4px;
+            margin-bottom: 4rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .experience-section h3 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+
+        .experience-section p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 0;
+        }
+
+        /* 公約のカードデザイン */
+        .promises {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .promises {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+        .promise-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            flex: 1;
+            transition: transform 0.3s ease;
+            border-top: 5px solid var(--primary-color);
+        }
+
+        .promise-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .promise-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .promise-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+
+        .promise-desc {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .message-section {
+            background-color: white;
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            margin-top: 4rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        footer {
+            background-color: #1b5e20; /* より濃い緑 */
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>新しい学校を、みんなの手で。</h1>
+        <div class="subtitle">前副会長の経験を活かし、確実な改革を。</div>
+        <div class="candidate-name">令和８（2026）年度 生徒会長立候補 森仁一朗</div>
+    </header>
+
+    <div class="container">
+
+        <!-- 前副会長のアピール部分 -->
+        <div class="experience-section">
+            <h3>副会長としての経験を、次のステップへ。</h3>
+            <p>
+                私は前副会長として、生徒会執行部の最前線で活動してきました。その中で見えてきたのは、「生徒の皆さんの声が学校のルールに反映されにくい」というもどかしい現状でした。<br><br>
+                だからこそ、内側から仕組みを変える必要があります。副会長として培った<b>学校側（先生方）との交渉経験</b>や、<b>執行部運営のノウハウ</b>をフルに活かし、ただ理想を語るだけではない「実現可能な改革」を推し進めます。
+            </p>
+        </div>
+
+        <h2 class="section-title">改革のための「三本槍」</h2>
+
+        <div class="promises">
+            <!-- 公約1 -->
+            <div class="promise-card">
+                <div class="promise-number">01</div>
+                <div class="promise-title">校則をみんなで考える場を作ります</div>
+                <div class="promise-desc">
+                    生徒自身が現行の制度や校則の是非を問い、改正案を自由に出せる「意見交換の場」を創設します。押し付けられるルールではなく、私たちが納得できるルールを共に作りましょう。
+                </div>
+            </div>
+
+            <!-- 公約2 -->
+            <div class="promise-card">
+                <div class="promise-number">02</div>
+                <div class="promise-title">制度を変えるための制度を作ります</div>
+                <div class="promise-desc">
+                    みんなで考えた校則改正案を、確実に実現できる枠組みを構築します。生徒会執行部の権限や動ける範囲を明確に拡大し、「意見を出して終わり」にならない仕組みを整えます。
+                </div>
+            </div>
+
+            <!-- 公約3 -->
+            <div class="promise-card">
+                <div class="promise-number">03</div>
+                <div class="promise-title">透明性を徹底した執行部を作ります</div>
+                <div class="promise-desc">
+                    新聞班・放送班との連携を強化します。今、執行部がどんな課題に取り組み、どれくらい進捗しているのかを定期的に発信し、全生徒が「見える・わかる」オープンな執行部を実現します。
+                </div>
+            </div>
+        </div>
+
+        <div class="message-section">
+            <h2>私たちの学校は、私たちが創る。</h2>
+            <p>
+                今の学校生活に満足していますか？「もっとこうなればいいのに」という想いを、一緒に形にしませんか。<br>
+                私が掲げる「三本槍」は、前副会長としての経験から導き出した、確かなステップです。<br>
+                皆様の貴重な一票を、どうか私に託してください。培った経験を活かし、全力で期待に応えます！
+            </p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 令和８（2026)年度 生徒会長立候補 森仁一朗. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
